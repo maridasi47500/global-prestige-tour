@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block montitre %}
+debut de mes mots: bienvenue sur world tour
+{% endblock %}
+{% block content %}
+<h1># global-prestige-tour</h1>
+{% for x in users | reverse %}
+ <li>{{ x["first_name"]  }}</li>
+
+{% endfor %} 
+fin de mes mots : crée des partitions sur chaque personne et un blog video, photos
+{% endblock %}
+{% block liens %}
+<a href="/">welcome</a>
+{% endblock %}
+<a href="/add_one_user"> add one user</a><a href="/add_one_country"> add one country</a><a href="/add_one_hotel"> add one hotel</a><a href="/add_one_city"> add one city</a><a href="/add_one_concert_hall"> add one concert_hall</a><a href="/add_one_musicalinstrument"> add one musicalinstrument</a><a href="/add_one_userhsainstrument"> add one userhsainstrument</a><a href="/add_one_backstage_note"> add one backstage_note</a><a href="/add_one_world_tour"> add one world_tour</a><a href="/add_one_photo"> add one photo</a><a href="/add_one_video"> add one video</a><a href="/add_one_score"> add one score</a><a href="/add_one_media_screenshot"> add one media_screenshot</a>
